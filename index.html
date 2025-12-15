@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Zest Family Kitchen</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-flex">
+            <img src="Images/logo.png" class="logo" alt="Zest Family Kitchen Logo">
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="aboutus">
+        <div class="aboutus">
+            <h1><span>ZEST</span> Family Kitchen</h1>
+            <p>
+                Welcome Zest Family Kitchen, where tradition meets taste! We’re a family-run restaurant 
+                serving heartfelt dishes inspired by time-honored recipes. Here, every bite feels like home.
+            </p>
+        </div>
+        <div class="aboutuspic">
+            <img src="Images/main_img.png" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Zest Family Kitchen | All Rights Reserved</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+    // Check if user is on the Home page
+    if (window.location.pathname.includes("index.html")) {
+        alert("Welcome to Zest Family Kitchen!");
+    }
+
+});
+
+    </script>
+
+</body>
+</html>
