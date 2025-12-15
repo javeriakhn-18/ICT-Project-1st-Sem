@@ -61,3 +61,14 @@ body {
 .nav-links .active {
     color: #ff4c29;
 }
+
+/* ----------------------------------------------------------
+   FOOTER (Used on ALL Pages)
+---------------------------------------------------------- */
+.footer {
+    text-align: center;
+    padding: 25px 0;
+    background: #111;
+    color: white;
+    margin-top: 40px;
+}
