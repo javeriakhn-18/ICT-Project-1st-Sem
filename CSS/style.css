@@ -155,3 +155,41 @@ body {
     border: 2px solid #9ac464;
     background-color: #d8ffd3;
 }
+
+/* ----------------------------------------------------------
+   GALLERY PAGE
+---------------------------------------------------------- */
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery-card {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
