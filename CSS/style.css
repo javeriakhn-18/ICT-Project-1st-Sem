@@ -288,3 +288,20 @@ button:hover {
     color: #7a4b3a;
     margin-bottom: 15px;
 }
+
+/* ----------------------------------------------------------
+   WARM THEME MODIFICATIONS
+---------------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background: #f1d3a6; /* warm cream background */
+    color: #222;
+    line-height: 1.6;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5a3e2f; /* warm brown */
+    font-size: 16px;
+    font-weight: 600;
+}
