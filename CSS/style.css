@@ -305,3 +305,11 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
+
+.menu,
+.contact,
+.about,
+.reservation {
+    background: #fffaf4; /* soft warm white */
+    box-shadow: 0 2px 10px rgba(150, 110, 80, 0.15); /* warm shadow */
+}
