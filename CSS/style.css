@@ -108,3 +108,50 @@ body {
 .aboutuspic img {
     width: 600px;
 }
+
+/* ----------------------------------------------------------
+   MENU PAGE
+---------------------------------------------------------- */
+.menu {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-img,
+.menu-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #ff4c29;
+    font-weight: bold;
+}
+
+/* JS highlight */
+.active-item {
+    border: 2px solid #9ac464;
+    background-color: #d8ffd3;
+}
