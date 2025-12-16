@@ -43,3 +43,52 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+// for reservation.html form validation and submission
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".reservation form");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // stop page refresh
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const partySize = document.getElementById("party-size").value;
+
+        // Empty field check
+        if (!name || !email || !date || !time || !partySize) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        // Email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Date validation (cannot reserve in the past)
+        const today = new Date();
+        const selectedDate = new Date(date);
+        today.setHours(0, 0, 0, 0);
+
+        if (selectedDate < today) {
+            alert("You cannot select a past date for a reservation.");
+            return;
+        }
+
+        // Success message
+        alert(
+            "Reservation Confirmed!\n\n" +
+            "Name: " + name + "\n" +
+            "Date: " + date + "\n" +
+            "Time: " + time + "\n" +
+            "Party Size: " + partySize + "\n\n" +
+            "Thank you for choosing Zest Family Kitchen!"
+        );
+
+        form.reset(); // clear form
+    });
+});
