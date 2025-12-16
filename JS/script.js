@@ -31,3 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
     });
 });
+
+// for menu.html active item highlighting
+        document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".menu-item");
+
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+            items.forEach(i => i.classList.remove("active-item"));
+            item.classList.add("active-item");
+        });
+    });
+});
