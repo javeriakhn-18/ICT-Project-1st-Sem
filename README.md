@@ -1,65 +1,55 @@
+## 👨‍💻 Group Members
+
+Javeria Noor
+MohammadUllah Ashori
+Aliyan Shahid
+
+
 ## 🍽️ Zest Family Kitchen Website
 
-Zest Family Kitchen is a responsive, multi-page restaurant website designed using HTML, CSS, and JavaScript.  
-The website provides a complete online presence for a restaurant, including menu details, gallery, contact information, and table reservations.
+Zest Family Kitchen is a responsive, multi-page restaurant website developed using HTML, CSS, and JavaScript. The website provides an online presence for a restaurant by showcasing its menu, gallery, contact information, and table reservation system.
 
----
 
-## 📖 Project Overview
+## 🌐 Live Site URL
 
-This project was created as part of a **web development lab assignment**.  
-It focuses on building a clean, user-friendly, and visually appealing restaurant website using front-end technologies.
+[https://javeriakhn-18.github.io/ICT-Project-1st-Sem/](https://javeriakhn-18.github.io/ICT-Project-1st-Sem/)
 
----
 
 ## 🛠️ Technologies Used
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Visual Studio Code  
-- Web Browser (Chrome / Edge)
+* HTML5
+* CSS3
+* JavaScript
+* Visual Studio Code
+* Web Browser (Chrome / Edge)
 
----
 
 ## 📂 Website Pages
 
-- **Home Page** – Introduction to Zest Family Kitchen  
-- **Menu Page** – Displays food items with prices  
-- **Gallery Page** – Showcases food images  
-- **Contact Us Page** – Contact details and message form  
-- **Reservation Page** – Table booking form  
-- **About Us Page** – Restaurant story and mission  
+* Home Page
+* Menu Page
+* Gallery Page
+* Contact Us Page
+* Reservation Page
+* About Us Page
 
----
 
 ## 🎯 Features
 
-- Responsive navigation bar  
-- Clean and professional layout  
-- Image gallery  
-- Contact and reservation forms  
-- Simple JavaScript interaction  
+* Responsive navigation bar
+* Clean and user-friendly layout
+* Image gallery
+* Contact and reservation forms
+* Basic JavaScript interactions
 
----
-
-## 👨‍💻 Developers
-
-- Javeria Noor  
-- Mohammadullah Ashori  
-- Aliyaan Shahid  
-
----
 
 ## 📌 How to Run the Project
 
-1. Download or clone the repository  
-2. Open `index.html` in any modern web browser  
-3. Navigate through the website using the menu  
+1. Download or clone the repository
+2. Open `index.html` in any modern web browser
+3. Use the navigation menu to explore the website
 
----
 
 ## 📜 License
 
-This project is for educational purposes only.
-
+This project is created for educational purposes only.
