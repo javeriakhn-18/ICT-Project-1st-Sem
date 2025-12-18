@@ -12,7 +12,7 @@ Zest Family Kitchen is a responsive, multi-page restaurant website developed usi
 
 ## 🌐 Live Site URL
 
-[https://javeriakhn-18.github.io/ICT-Project-1st-Sem/](https://javeriakhn-18.github.io/ICT-Project-1st-Sem/)
+https://javeriakhn-18.github.io/ICT-Project-1st-Sem/
 
 
 ## 🛠️ Technologies Used
