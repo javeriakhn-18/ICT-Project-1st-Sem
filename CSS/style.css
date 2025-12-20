@@ -12,7 +12,7 @@
 ---------------------------------------------------------- */
 body {
     font-family: Arial, sans-serif;
-    background: #fafafa;
+    background: #f1d3a6;
     color: #222;
     line-height: 1.6;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   HEADER (Used on ALL Pages)
+   HEADER
 ---------------------------------------------------------- */
 .header {
     background: #ffffff;
@@ -37,10 +37,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
     width: 120px;
+    max-width: 100%;
 }
 
 /* NAVIGATION */
@@ -48,11 +50,12 @@ body {
     display: flex;
     gap: 25px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #444;
+    color: #5a3e2f;
     font-size: 16px;
     font-weight: 600;
 }
@@ -63,7 +66,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   FOOTER (Used on ALL Pages)
+   FOOTER
 ---------------------------------------------------------- */
 .footer {
     text-align: center;
@@ -74,39 +77,41 @@ body {
 }
 
 /* ----------------------------------------------------------
-   HOME PAGE — OLD MIDDLE SECTION (ABOUT US)
+   HOME PAGE — ABOUT US
 ---------------------------------------------------------- */
 #aboutus {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
     width: 100%;
-    height: 93vh;
+    min-height: 90vh;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 #aboutus .aboutus h1 {
-    margin-top: 180px;
+    font-size: 42px;
     margin-bottom: 20px;
-    font-size: 45px;
 }
 
 #aboutus .aboutus h1 span {
     color: #fac031;
     font-family: mv boli;
-    font-size: 80px;
+    font-size: 70px;
 }
 
 #aboutus .aboutus p {
-    width: 400px;
+    max-width: 500px;
+    margin: auto;
+    font-size: 18px;
     text-align: justify;
-    margin-left: 130px;
-    margin-bottom: 150px;
-    font-size: 20px;
 }
 
 .aboutuspic img {
-    width: 600px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 /* ----------------------------------------------------------
@@ -114,11 +119,11 @@ body {
 ---------------------------------------------------------- */
 .menu {
     padding: 20px;
-    background: white;
+    background: #fffaf4;
     border-radius: 8px;
     max-width: 800px;
     margin: 20px auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(150, 110, 80, 0.15);
 }
 
 .menu-item {
@@ -139,10 +144,6 @@ body {
     height: 90px;
     object-fit: cover;
     border-radius: 8px;
-}
-
-.menu-item h3 {
-    margin-bottom: 5px;
 }
 
 .price {
@@ -174,7 +175,7 @@ body {
 .gallery-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .gallery-card {
@@ -184,35 +185,39 @@ body {
 
 .gallery-card img {
     width: 100%;
-    height: 230px;
+    height: 220px;
     object-fit: cover;
     transition: 0.3s ease;
 }
 
 .gallery-card:hover img {
-    transform: scale(1.1);
-    opacity: 0.9;
+    transform: scale(1.05);
 }
 
 /* ----------------------------------------------------------
-   CONTACT PAGE
+   CONTACT / ABOUT / RESERVATION (Shared Styles)
 ---------------------------------------------------------- */
-.contact {
+.contact,
+.about,
+.reservation {
     padding: 30px;
-    background: white;
+    background: #fffaf4;
     max-width: 600px;
     margin: 25px auto;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgba(150, 110, 80, 0.15);
 }
 
-.contact h2 {
+.contact h2,
+.about h2,
+.reservation h2 {
     text-align: center;
     color: #7a4b3a;
+    margin-bottom: 15px;
 }
 
-.contact-details p {
-    margin: 5px 0;
+.about h3 {
+    margin-top: 20px;
 }
 
 input,
@@ -225,11 +230,8 @@ select {
     margin-bottom: 15px;
 }
 
-label {
-    margin-bottom: 5px;
-}
-
 button {
+    width: 100%;
     padding: 12px;
     background-color: #ff4c29;
     border: none;
@@ -244,72 +246,51 @@ button:hover {
 }
 
 /* ----------------------------------------------------------
-   ABOUT PAGE
+   RESPONSIVE MEDIA QUERIES
 ---------------------------------------------------------- */
-.about {
-    padding: 30px;
-    background: white;
-    max-width: 600px;
-    margin: 25px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+/* Tablets */
+@media (max-width: 992px) {
+    #aboutus {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #aboutus .aboutus h1 span {
+        font-size: 60px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-.about h2 {
-    text-align: center;
-    color: #7a4b3a;
-    margin-bottom: 15px;
-}
+/* Mobile */
+@media (max-width: 600px) {
+    .header-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-.about h3 {
-    color: #333;
-    margin-top: 20px;
-}
+    .nav-links {
+        justify-content: center;
+        gap: 15px;
+    }
 
-.about p {
-    color: #555;
-    margin-bottom: 10px;
-}
+    #aboutus .aboutus h1 {
+        font-size: 32px;
+    }
 
-/* ----------------------------------------------------------
-   RESERVATION PAGE
----------------------------------------------------------- */
-.reservation {
-    padding: 30px;
-    background: white;
-    max-width: 600px;
-    margin: 25px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
+    #aboutus .aboutus h1 span {
+        font-size: 45px;
+    }
 
-.reservation h2 {
-    text-align: center;
-    color: #7a4b3a;
-    margin-bottom: 15px;
-}
+    #aboutus .aboutus p {
+        font-size: 16px;
+    }
 
-/* ----------------------------------------------------------
-   WARM THEME MODIFICATIONS
----------------------------------------------------------- */
-body {
-    font-family: Arial, sans-serif;
-    background: #f1d3a6; /* warm cream background */
-    color: #222;
-    line-height: 1.6;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #5a3e2f; /* warm brown */
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.menu,
-.contact,
-.about,
-.reservation {
-    background: #fffaf4; /* soft warm white */
-    box-shadow: 0 2px 10px rgba(150, 110, 80, 0.15); /* warm shadow */
+    .section-title {
+        font-size: 26px;
+    }
 }
